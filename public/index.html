@@ -128,6 +128,11 @@
           tags: ['REST / SOAP', 'Kafka / RabbitMQ', 'Data mapping', 'Technical documentation']
         },
         {
+          title: 'Software Development',
+          text: 'Building Web servicies and applications from scratch using whole spectrum of modern frameworks and AI-tools.',
+          tags: ['Python', 'React', 'NodeJS']
+        },
+        {
           title: 'DevOps-Aware Delivery Support',
           text: 'Support feature delivery with CI/CD awareness, server log review, config troubleshooting, release coordination, and effective collaboration with DevOps specialists.',
           tags: ['CI/CD basics', 'Logs & configs', 'Release support', 'Cross-team coordination']
@@ -150,34 +155,60 @@
       ],
       proof: [
         { value: '10+', label: 'projects handled' },
-        { value: '15+', label: 'data and integration initiatives led or documented' },
-        { value: '4+', label: 'professional angles combined in one profile' }
+        { value: '15+', label: 'data and integration initiatives' },
+        { value: '4+', label: 'professional angles combined' }
       ],
       timeline: [
         {
-          role: 'Data Science and Data Analytics student',
-          org: 'Université Savoie Mont Blanc / The University of Southern Denmark / Netology',
-          period: '2023-2025',
+          role: 'Software Development / DevOps / Data Analyst',
+          org: 'Legislation analytics service',
+          period: '',
           bullets: [
-            'Enhanced my professional skills while studying Master`s degree'
+            'Built a service for parsing and analyzing legislative text from official public sources.',
+            'Initial text analysis with further automatization using Data Analytics and LLM tools',
+            'DevOps'
           ]
         },
         {
-          role: 'Software Developer / Product Manager (Freelance)',
+          role: 'IT Business Analyst',
+          org: 'AI Due Diligence platform AIvanyan',
+          period: '',
+          bullets: [
+            'Building and optimization overall process of AI-acceleration of Due Diligence process from scratch.',
+            'QA',
+            'CustDev'
+          ]
+        },
+        {
+          role: 'Software Development / IT consulting / DevOps',
           org: 'SEO GPT',
-          period: '2023',
+          period: '',
           bullets: [
             'Built a React and NestJS web application for SEO text generation powered by OpenAI APIs.',
-            'Combined product thinking with implementation and early-stage service shaping.'
+            'Combined product thinking with implementation and early-stage service shaping.',
+            'Prepared comprehensive documentation and market research.',
+            'DevOps'
           ]
         },
         {
-          role: 'Systems Analyst / Integrations Analyst / AI Project Manager',
+          role: 'Software Development / Product Management / DevOps',
+          org: 'Pactum Privacy',
+          period: '',
+          bullets: [
+            'Built a React App for a privacy control and compliance.',
+            'Conducted several CustDev stages.',
+            'Launched a product in Google Platforms.',
+            'DevOps',
+            'SEO optimization'
+          ]
+        },
+        {
+          role: 'Software Development / Product Management',
           org: 'Nlogic',
-          period: '2019 — 2022',
+          period: '',
           bullets: [
             'Led integration initiatives, created specifications, mapped processes, and coordinated tense delivery periods with developers.',
-            'Automated tasks with Python, supported testing, documentation, training, and AI-related product work.',
+            'Software Development with Python, QA, documentation, training, and AI-related product work.',
             'Managed multiple projects for legal, telecom, and financial contexts.'
           ]
         }
@@ -254,7 +285,7 @@
               <div className="container hero-grid">
                 <div>
                   <span className="eyebrow">France-based · Remote-friendly</span>
-                  <h1>Independent technical services for teams that need clarity, structure, and delivery. Professional IT consulting.</h1>
+                  <h1>Professional IT consulting.</h1>
                   <p>{data.intro}</p>
                   <div className="hero-actions">
                     <a className="btn btn-primary" href="#contact">Discuss your project</a>
@@ -287,7 +318,7 @@
                 <div className="section-intro">
                   <div>
                     <div className="kicker">Services</div>
-                    <h2>What I can help with</h2>
+                    <h2>What I can help you with</h2>
                   </div>
                 </div>
                 <div className="services-grid">
@@ -309,7 +340,7 @@
                 <div className="section-intro">
                   <div>
                     <div className="kicker">Experience</div>
-                    <h2>Delivery background</h2>
+                    <h2 >Portfolio</h2>
                   </div>
                 </div>
                 <div className="timeline">
@@ -317,11 +348,10 @@
                     <article className="timeline-item" key={item.role + item.org}>
                       <div className="timeline-meta">
                         <strong>{item.org}</strong>
-                        <span>{item.period}</span>
                       </div>
                       <h3 style={{fontFamily:'var(--font-body)', fontWeight:700, fontSize:'var(--text-lg)', marginBottom:'var(--space-3)'}}>{item.role}</h3>
                       <ul role="list" style={{display:'grid', gap:'var(--space-2)'}}>
-                        {item.bullets.map(point => <li key={point} className="muted">• {point}</li>)}
+                        {item.bullets.map(point => <li key={point} className="muted"> {point}</li>)}
                       </ul>
                     </article>
                   ))}
@@ -341,10 +371,6 @@
                       <div className="contact-item">
                         <strong>Email</strong>
                         <div><a href={`mailto:${data.email}`} style={{color:'var(--color-primary)', textDecoration:'none'}}>{data.email}</a></div>
-                      </div>
-                      <div className="contact-item">
-                        <strong>Suggested positioning</strong>
-                        <div className="muted">Systems analysis · service architecture · AI/data project support · product delivery coordination</div>
                       </div>
                     </div>
                   </div>
